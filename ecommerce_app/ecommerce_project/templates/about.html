@@ -1,0 +1,39 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block title %}About{% endblock title %}
+
+{% block main-content %}
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="{% static 'app/dj-ecom/images/banner/b1.jpg' %}" class="d-block w-100" alt="banner image">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'app/dj-ecom/images/banner/b2.jpg' %}" class="d-block w-100" alt="banner image">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'app/dj-ecom/images/banner/b3.jpg' %}" class="d-block w-100" alt="banner image">
+        </div>
+        <div class="carousel-item">
+            <img src="{% static 'app/dj-ecom/images/banner/b4.jpg' %}" class="d-block w-100" alt="banner image">
+        </div>
+    </div>
+</div>
+
+<div class="container mt-4">
+    <h1 class="text-center">About Us</h1>
+    <div class="row">
+        <p class="fs-4 text-center">
+            We are the leading distributors of world-class dairy products that are locally manufactured from our locally developed industries in and around Uganda, thereby developing our communities through the provision of healthy dairy products with high nutrient content like fats and proteins.
+        </p>
+    </div>
+
+    <h2 class="text-center mt-4">Mission</h2>
+    <div class="row">
+        <p class="fs-4 text-center">
+            Our mission statement states that we are here to serve and develop better and sustainable living through the provision of better quality dairy products in the communities surrounding us. We are the leading distributors of world-class dairy products that are locally manufactured from our locally developed industries in and around Uganda, thereby developing our communities through the provision of healthy dairy products with high nutrient content like fats and proteins.
+        </p>
+    </div>
+</div>
+{% endblock main-content %}
